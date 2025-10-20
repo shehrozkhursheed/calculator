@@ -1,30 +1,21 @@
-
-
-
-var display = document.getElementById(" display ");
+var display = document.getElementById("display");
 
 console.log(display);
 
 
-function press(val)
-{
+function press(val){
     display.value += val;
 }
 
-
-
-function clearDisplay()
-{
+function clearDisplay(){
     display.value = ""
 }
 
-function delChar()
-{
+function delChar(){
     display.value = display.value.slice(0, -1)   
 }
 
-function calculate()
-{
+function calculate(){
     var text = display.value;
     var opt = "+-*/%."
 
@@ -39,6 +30,7 @@ function calculate()
 
     var errorFound = false;
 
+    // A = current AB = 
 
    
     
@@ -59,3 +51,4 @@ function calculate()
 
 
 }
+
